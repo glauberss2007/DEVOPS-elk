@@ -1,6 +1,11 @@
 # elk
 Project developed during ELK training course from UDEMY
 
+1. Installation:
+´´´´
+dasda
+´´´´
+
 
 ## Introduction
 This step involves envronment configuration, Rest API and inverted index
