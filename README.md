@@ -3,33 +3,9 @@ Project developed during ELK training course from UDEMY
 
 1. Installation:
 
-Ubuntu Installation
+Deploying into K8S: 
 
-```
-wget -qO - https://artifacts.elastic.com/GPG-KEY-elasticsearch | sudo apt-key add -
-sudo apt-get install apt-transport-https
-echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/source.list.d/elastic-7.x.list
-sudo apt-get update && sudo apt-get install elasticsearch
-```
-
-
-Persistent run into K8S (minikube)
-Start an VM with 2gb RAM ,2vcpu and 20gb HD them
-```
-https://minikube.sigs.k8s.io/docs/start/
-```
-
-Setup configuration file
-
-```
-sudo nano /etc/elasticsearch/elasticsearch.yml
-```
-
-Uncomment the line `node.name: node-1`
-Uncomment the line and edit: `network.host: 0.0.0.0`
-Uncomment and edit: `discovery.seed_hosts: ["127.0.0.1"]`
-Uncoment and edit: `cluster.initial_master_nodes: ["node-1"]`
-Save and exit.
+https://www.magalix.com/blog/kubernetes-observability-log-aggregation-using-elk-stack
 
 
 ## Introduction
