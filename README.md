@@ -5,6 +5,8 @@ Project developed during ELK training course from UDEMY
 
 Deploying into K8S: 
 
+https://logz.io/blog/deploying-the-elk-stack-on-kubernetes-with-helm/
+
 https://www.magalix.com/blog/kubernetes-observability-log-aggregation-using-elk-stack
 
 
