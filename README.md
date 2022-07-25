@@ -3,7 +3,7 @@ Project developed during ELK training course from UDEMY
 
 1. Installation:
 
-Deploying into K8S: 
+https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-20-04-pt
 
 https://logz.io/blog/deploying-the-elk-stack-on-kubernetes-with-helm/
 
