@@ -13,6 +13,44 @@ https://citizix.com/how-to-install-and-configure-elasticsearch-on-opensuse-leap-
 
 PS: f necessary disable machine learn module by adding "xpack.ml.enabled: false" on /etc/elasticsearch/elasticsearch.yml
 
+2. Installing and indexing the shakespeare work:
+
+Download mapp file:
+```
+wget http://media.sundog-soft.com/es7/shakes-mapping.json
+```
+
+Create index:
+```
+curl -H 'Content-Type: application/json' -XPUT 127.0.0.1:9200/shakespeare --data-binary @shakes-mapping.json
+```
+
+Download data:
+```
+wget http://media.sundog-soft.com/es7/shakespeare_7.0.json
+```
+
+Insert data into el:
+```
+curl -H 'Content-Type: application/json' -XPOST '127.0.0.1:9200/shakespeare/_bulk?pretty' --data-binary @shakespeare_7.0.json
+```
+
+Search for a a text content:
+```
+curl -H 'Content-Type: application/json' -XGET '127.0.0.1:9200/shakespeare/_search?pretty' -d '
+```
+
+Then
+
+    {
+    "query" : {
+    "match_phrase" : {
+    "text_entry" : "to be or not to be"
+    }
+    }
+    }
+    '
+
 ## Introduction
 This step involves envronment configuration, Rest API and inverted index
 
