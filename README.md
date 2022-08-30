@@ -9,6 +9,8 @@ https://logz.io/blog/deploying-the-elk-stack-on-kubernetes-with-helm/
 
 https://www.magalix.com/blog/kubernetes-observability-log-aggregation-using-elk-stack
 
+https://citizix.com/how-to-install-and-configure-elasticsearch-on-opensuse-leap-15-3/
+
 PS: f necessary disable machine learn module by adding "xpack.ml.enabled: false" on /etc/elasticsearch/elasticsearch.yml
 
 ## Introduction
@@ -34,3 +36,4 @@ Filebeat, xpack and filebeat
 
 ## Elastic on cloud
 Amazon ES and elastic cloud
+https://citizix.com/how-to-install-and-configure-elasticsearch-on-opensuse-leap-15-3/
